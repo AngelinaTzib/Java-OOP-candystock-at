@@ -9,8 +9,10 @@ public class Main {
             System.out.println("[view] candy, [add] candy, [edit] candy [remove] candy or q to quit");
             System.out.print("> ");
             String userinput = scanner.nextLine();
+
             if(userinput.equals("view")){
-                candy.viewCandies();            }
+                candy.viewCandies();
+            }
             else if (userinput.equals("add")) {
                 System.out.println("What candy would you like to add? ");
                 String newCandy = scanner.nextLine();
@@ -18,6 +20,7 @@ public class Main {
                 String newStock = scanner.nextLine();
                 candy.addCandy(newCandy, newStock);
             }
+
             else if (userinput.equals("edit")) {
                 System.out.println("What candy would you like to edit? ");
                 String newCandy = scanner.nextLine();
@@ -25,6 +28,7 @@ public class Main {
                 String newStock = scanner.nextLine();
                 candy.updateCandy(newCandy, newStock);
             }
+
             else if (userinput.equals("remove")){
                 System.out.println("What candy would you like to remove? ");
                 String deleteCandy = scanner.nextLine();
@@ -32,6 +36,7 @@ public class Main {
                 String deleteStock = scanner.nextLine();
                 candy.removeCandy(deleteCandy, deleteStock);
             }
+
             else {
                 break;
             }
