@@ -14,8 +14,8 @@ public class Candy {
         candies.add(name);
         candies.add(stock);
         candylist.add(candies);
-
     }
+
     public String getName() {
         return this.name;
     }
@@ -23,9 +23,11 @@ public class Candy {
     public String getStock() {
         return this.stock;
     }
+
     public String toString() {
         return "Candy: " + name + ", Stock: " + stock;
     }
+
     public void viewCandies() {
         if (candies.isEmpty()) {
             System.out.println("No candy available");
@@ -34,6 +36,7 @@ public class Candy {
             System.out.println(candylist);
         }
     }
+
     public void addCandy(String name, String stock) {
         List<String> candies = new ArrayList<>();
         candies.add(name);
@@ -41,6 +44,7 @@ public class Candy {
         candylist.add(candies);
         System.out.println("Candy has been added!");
     }
+
     public void updateCandy(String name, String stock) {
         List<String> updatecandies = new ArrayList<>();
         updatecandies.add(name);
@@ -56,13 +60,12 @@ public class Candy {
         innerListToUpdate.add(updatedCandy);
         innerListToUpdate.add(updatedStock);
         System.out.println(innerListToUpdate);
-
     }
+
     public void removeCandy(String name, String stock) {
         List<String> removecandies = new ArrayList<>();
         removecandies.add(name);
         removecandies.add(stock);
         candylist.remove(removecandies);
-
     }
 }
