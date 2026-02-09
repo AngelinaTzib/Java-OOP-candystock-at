@@ -55,7 +55,6 @@ public class Candy {
         innerListToUpdate.clear();
         innerListToUpdate.add(updatedCandy);
         innerListToUpdate.add(updatedStock);
-//        innerListToUpdate.set();
         System.out.println(innerListToUpdate);
 
     }
